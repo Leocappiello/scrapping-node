@@ -1,0 +1,65 @@
+{
+    "mercadolibre": {
+        "url":{
+            "urlMain":"https://listado.mercadolibre.com.ar/",
+            "urlProduct": "productoScrap"
+        },
+        "separator": "-",
+        "nuevo": "a[class~='ui-search-link'][aria-label='Nuevo']",
+        "order": ".andes-dropdown__trigger"
+    },
+    "musimundo": {
+        "url": {
+            "urlMain": "https://www.musimundo.com/mi-musimundo/search?text="
+        },
+        "separator": "+"
+    },
+    "garbarino": {
+        "url": {
+            "urlMain": "https://www.garbarino.com/productoScrap?_q=productoScrap&map=ft"
+        },
+        "separator": " "
+    },
+    "fravega": {
+        "url": {
+            "urlMain": "https://www.fravega.com/l/?keyword=productoScrap"
+        },
+        "separator": "+"
+    },
+    "cetrogar": {
+        "url": {
+            "urlMain": "https://www.cetrogar.com.ar/catalogsearch/result/?q=productoScrap"
+        },
+        "separator": "+"
+    },
+    "naldo": {
+        "url": {
+            "urlMain": "https://www.naldo.com.ar/search/?text=productoScrap"
+        },
+        "separator": "+"
+    },
+    "pardo": {
+        "url": {
+            "urlMain": "https://www.pardo.com.ar/productoScrap%20productoScrap?_q=productoScrap%20productoScrap&map=ft"
+        },
+        "separator": "+"
+    },
+    "compragamer": {
+        "url": {
+            "urlMain": "https://compragamer.com/?seccion=3&criterio=productoScrap"
+        },
+        "separator": "%20"
+    },
+    "maximusgaming": {
+        "url": {
+            "urlMain": "https://www.maximus.com.ar/Productos/OR=1/BUS=productoScrap/maximus.aspx?s=productoScrap"
+        },
+        "separator": "%20"
+    },
+    "mexx": {
+        "url": {
+            "urlMain": "https://www.mexx.com.ar/buscar/?p=productoScrap"
+        },
+        "separator": "+"
+    }
+}
