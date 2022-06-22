@@ -1,8 +1,8 @@
-function getUrlMercadoLibre(){
-    console.log("mercadolibre:")
+function getUrl(){
+    console.log("url:")
 }
 
 
 module.exports = {
-    getUrlMercadoLibre
+    getUrl
 }

@@ -1,24 +1,32 @@
-const {getPath, returnValuesUrl, replaceGenericValues} = require('./utils/functions')
-const {getUrlMercadoLibre} = require('./utils/sellers')
+const { 
+    getPath, 
+    getNameSellers, 
+    getClassNamesSellers, 
+    getClassPricesSellers,
+} = require('./utils/functions')
+const { getUrl } = require('./utils/sellers')
 
 const puppeteer = require('puppeteer');
 const randomUseragent = require('random-useragent');
 
 (async () => {
     //example
-    let productName = "iphone  64  usado-"
+    let productName = "3060 ti"
 
     //get path and json
     let data = getPath()
 
-    //result url from data
-    let result = returnValuesUrl(data)
-    
-    //replace generic url for product name entered from user
-    result = replaceGenericValues(result, productName)
-    console.log(result)
+    //each seller returns the Url
+    let result = getNameSellers(data, productName)
+    console.log(result);
 
-    getUrlMercadoLibre()
+    //get each class of name and price
+    let classNames = getClassNamesSellers(data)
+    let classPrice = getClassPricesSellers(data)
+    
+    console.log(classNames);
+    console.log(classPrice);
+
 
     /*
     const browser = await puppeteer.launch({ headless: false })
