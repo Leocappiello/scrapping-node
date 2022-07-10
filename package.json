@@ -5,8 +5,7 @@
   "main": "index.js",
   "scripts": {
     "start": "nodemon index.js",
-    "scrap": "node scrapper/scrapper.js",
-    "scraptwo": "node scrapper/scrapperTwo.js"
+    "scrap": "node scrapper/scrapper.js"
   },
   "keywords": [],
   "author": "",

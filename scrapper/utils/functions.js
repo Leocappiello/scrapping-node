@@ -28,8 +28,8 @@ function getNameSellers(data, productName) {
     return arr
 }
 
-function getPath() {
-    let urlJSON = path.join(__dirname, '/../resource/example.json')
+function getPath(url = '/../resource/example.json') {
+    let urlJSON = path.join(__dirname, url)
     let data = fs.readFileSync(urlJSON)
     data = JSON.parse(data)
     return data
